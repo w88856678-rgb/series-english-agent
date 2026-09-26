@@ -90,6 +90,13 @@ function render() {
   const due=dueWords(); $('due').textContent=`当前有 ${due.length} 个待复习或已到复习时间的表达。`; $('due-next').disabled=!due.length;
 }
 async function boot() {
+  if (location.protocol === 'file:') {
+    $('title').textContent='请从学习网址打开';
+    report('直接双击 HTML 无法加载课程。请先启动课程库，再打开 http://127.0.0.1:8765/。具体启动方法见项目 README。');
+    document.querySelectorAll('button,select,input').forEach(e=>e.disabled=true);
+    $('card').hidden=true;
+    return;
+  }
   try {
     const response=await fetch('./catalog.json'); if(!response.ok) throw Error('课程库读取失败');
     catalog=await response.json();
@@ -107,6 +114,6 @@ async function boot() {
     $('export').onclick=()=>{const url=URL.createObjectURL(new Blob([JSON.stringify({schemaVersion:1,records},null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='series-english-progress.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
     $('import').onchange=async e=>{try{const f=e.target.files[0];if(!f)return;if(f.size>10_000_000)throw Error('进度文件过大');const incoming=validRecords(JSON.parse(await f.text()));for(const [k,v] of Object.entries(incoming)){if(!records[k]||v.updatedAt>records[k].updatedAt)records[k]=v;}save();render();report('');}catch(err){report(err.message);}finally{e.target.value='';}};
     voices(); synth?.addEventListener('voiceschanged',voices); window.addEventListener('pagehide',stop); render();
-  } catch(err){report(`无法打开课程：${err.message}`);}
+  } catch(err){$('title').textContent='课程未能加载';report(`无法打开课程：${err.message}。请确认启动的是已初始化的课程库，然后刷新重试。`);}
 }
 boot();
