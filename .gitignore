@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*
+!.env.example
+library/
+private/
+exports/
+*.progress.json
+series-english-progress.json
+.venv/

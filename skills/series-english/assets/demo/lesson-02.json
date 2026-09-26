@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "seriesId": "coffee-and-plans",
+  "series": "Coffee & Plans · 原创短剧",
+  "season": 1,
+  "episode": 2,
+  "title": "再约一次见面",
+  "language": "中文",
+  "source": "Original demo by Series English Agent contributors",
+  "words": [
+    {
+      "term": "pick up",
+      "meaning": "顺路接某人；拿起",
+      "ipa": "pɪk ʌp",
+      "sentence": "Can you pick up the tickets before lunch?",
+      "translation": "你能在午饭前取票吗？",
+      "tip": "pick up 在这里指取走物品；也可以指开车接人。",
+      "sourceLine": 1,
+      "sourceForm": "pick up"
+    },
+    {
+      "term": "run into",
+      "meaning": "偶然遇见",
+      "ipa": "rʌn ˈɪntuː",
+      "sentence": "I sometimes run into my teacher at the market.",
+      "translation": "我有时在市场偶遇老师。",
+      "tip": "run into someone 表示偶遇某人；run into problems 表示遇到问题。",
+      "sourceLine": 3,
+      "sourceForm": "run into"
+    },
+    {
+      "term": "take a break",
+      "meaning": "休息一下",
+      "ipa": "teɪk ə breɪk",
+      "sentence": "Let us take a break after this exercise.",
+      "translation": "做完这个练习后休息一下吧。",
+      "tip": "take a break from something：暂时停下某件事。",
+      "sourceLine": 8,
+      "sourceForm": "take a break"
+    },
+    {
+      "term": "hang out",
+      "meaning": "闲逛；一起消磨时间",
+      "ipa": "hæŋ aʊt",
+      "sentence": "We often hang out near the river on Sundays.",
+      "translation": "我们经常周日在河边一起待着。",
+      "tip": "hang out with someone：和某人一起休闲。",
+      "sourceLine": 11,
+      "sourceForm": "hang out"
+    },
+    {
+      "term": "show up",
+      "meaning": "出现；到场",
+      "ipa": "ʃoʊ ʌp",
+      "sentence": "Please show up ten minutes before the lesson.",
+      "translation": "请在上课前十分钟到场。",
+      "tip": "show up 是口语中的到场、出现。",
+      "sourceLine": 12,
+      "sourceForm": "show up"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+1
+00:00:03,000 --> 00:00:05,000
+I can pick up your bag after work.
+
+2
+00:00:06,000 --> 00:00:08,000
+Let us figure out where to meet.
+
+3
+00:00:09,000 --> 00:00:11,000
+Did you run into Maya yesterday?
+
+4
+00:00:12,000 --> 00:00:14,000
+You can count on me for help.
+
+5
+00:00:15,000 --> 00:00:17,000
+This game is new to us; give it a try.
+
+6
+00:00:18,000 --> 00:00:20,000
+Are you in a hurry this morning?
+
+7
+00:00:21,000 --> 00:00:23,000
+That plan does make sense.
+
+8
+00:00:24,000 --> 00:00:26,000
+We should take a break before we leave.
+
+9
+00:00:27,000 --> 00:00:29,000
+I look forward to our next trip.
+
+10
+00:00:30,000 --> 00:00:32,000
+We can buy some bread on the way.
+
+11
+00:00:33,000 --> 00:00:35,000
+Do you want to hang out after class?
+
+12
+00:00:36,000 --> 00:00:38,000
+Will everyone show up on time?

@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "seriesId": "coffee-and-plans",
+  "series": "Coffee & Plans · 原创短剧",
+  "season": 1,
+  "episode": 1,
+  "title": "周末的小计划",
+  "language": "中文",
+  "source": "Original demo by Series English Agent contributors",
+  "words": [
+    {
+      "term": "pick up",
+      "meaning": "顺路接某人；拿起",
+      "ipa": "pɪk ʌp",
+      "sentence": "Can you pick up the tickets before lunch?",
+      "translation": "你能在午饭前取票吗？",
+      "tip": "pick up 在这里指取走物品；也可以指开车接人。",
+      "sourceLine": 1,
+      "sourceForm": "pick up"
+    },
+    {
+      "term": "figure out",
+      "meaning": "弄清楚；想出",
+      "ipa": "ˈfɪɡjər aʊt",
+      "sentence": "We need to figure out a better route.",
+      "translation": "我们需要想出一条更好的路线。",
+      "tip": "figure out 强调通过思考找到答案。",
+      "sourceLine": 2,
+      "sourceForm": "figure out"
+    },
+    {
+      "term": "run into",
+      "meaning": "偶然遇见",
+      "ipa": "rʌn ˈɪntuː",
+      "sentence": "I sometimes run into my teacher at the market.",
+      "translation": "我有时在市场偶遇老师。",
+      "tip": "run into someone 表示偶遇某人；run into problems 表示遇到问题。",
+      "sourceLine": 3,
+      "sourceForm": "run into"
+    },
+    {
+      "term": "count on",
+      "meaning": "依靠；指望",
+      "ipa": "kaʊnt ɑːn",
+      "sentence": "You can count on me to bring the snacks.",
+      "translation": "你可以指望我带零食来。",
+      "tip": "count on someone to do something：指望某人做某事。",
+      "sourceLine": 4,
+      "sourceForm": "count on"
+    },
+    {
+      "term": "give it a try",
+      "meaning": "试试看",
+      "ipa": "ɡɪv ɪt ə traɪ",
+      "sentence": "The recipe looks easy, so give it a try.",
+      "translation": "这个食谱看起来很简单，试试看吧。",
+      "tip": "用于鼓励尝试，语气轻松。",
+      "sourceLine": 5,
+      "sourceForm": "give it a try"
+    },
+    {
+      "term": "in a hurry",
+      "meaning": "匆忙；赶时间",
+      "ipa": "ɪn ə ˈhɜːri",
+      "sentence": "I left my notebook at home because I was in a hurry.",
+      "translation": "我因为赶时间把笔记本落在家里了。",
+      "tip": "be in a hurry：处于赶时间的状态。",
+      "sourceLine": 6,
+      "sourceForm": "in a hurry"
+    },
+    {
+      "term": "make sense",
+      "meaning": "有道理；说得通",
+      "ipa": "meɪk sens",
+      "sentence": "Your explanation helps the rule make sense.",
+      "translation": "你的解释让这条规则变得容易理解。",
+      "tip": "如果是 makes sense，要注意第三人称单数。",
+      "sourceLine": 7,
+      "sourceForm": "make sense"
+    },
+    {
+      "term": "take a break",
+      "meaning": "休息一下",
+      "ipa": "teɪk ə breɪk",
+      "sentence": "Let us take a break after this exercise.",
+      "translation": "做完这个练习后休息一下吧。",
+      "tip": "take a break from something：暂时停下某件事。",
+      "sourceLine": 8,
+      "sourceForm": "take a break"
+    },
+    {
+      "term": "look forward to",
+      "meaning": "期待",
+      "ipa": "lʊk ˈfɔːrwərd tuː",
+      "sentence": "I look forward to seeing your new apartment.",
+      "translation": "我期待去看看你的新公寓。",
+      "tip": "to 是介词，后接名词或动名词 seeing，而不是 see。",
+      "sourceLine": 9,
+      "sourceForm": "look forward to"
+    },
+    {
+      "term": "on the way",
+      "meaning": "在途中；顺路",
+      "ipa": "ɑːn ðə weɪ",
+      "sentence": "There is a small bakery on the way to school.",
+      "translation": "去学校的路上有一家小面包店。",
+      "tip": "on the way to 后接目的地；home 前省略 to。",
+      "sourceLine": 10,
+      "sourceForm": "on the way"
+    }
+  ]
+}

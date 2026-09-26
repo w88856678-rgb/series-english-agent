@@ -1,0 +1,4 @@
+interface:
+  display_name: "一集一练 · 追剧英语"
+  short_description: "从剧集字幕生成英语课程，在网页听发音、记词义，并按学习记录复习。"
+  default_prompt: "用 $series-english 把我提供的这一集字幕做成中文释义的英语课程，并打开配套练习网站。"
