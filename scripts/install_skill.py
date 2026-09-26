@@ -3,6 +3,11 @@ import argparse
 import os
 from pathlib import Path
 import shutil
+import sys
+
+for stream in (sys.stdout, sys.stderr):
+    if hasattr(stream, 'reconfigure'):
+        stream.reconfigure(encoding='utf-8')
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--dest', help='Skill parent directory; defaults to CODEX_HOME/skills or ~/.codex/skills')

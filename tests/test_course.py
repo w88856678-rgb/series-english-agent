@@ -1,6 +1,7 @@
 import copy
 import importlib.util
 import json
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -79,7 +80,7 @@ class CourseTests(unittest.TestCase):
 
     def test_end_to_end_cli(self):
         def run(*args):
-            return subprocess.run([sys.executable,str(CLI),*map(str,args)],capture_output=True,text=True,check=True)
+            return subprocess.run([sys.executable,str(CLI),*map(str,args)],capture_output=True,encoding='utf-8',check=True)
         library=self.root/'library';evidence=self.root/'evidence.json'
         run('init','--library',library)
         run('prepare',DEMO/'dialogue.srt','--source',self.lesson['source'],'--output',evidence)
@@ -99,6 +100,16 @@ class CourseTests(unittest.TestCase):
         self.assertTrue((self.root/'standalone/app.js').exists())
         result=subprocess.run([sys.executable,str(ROOT/'scripts/install_skill.py'),'--dest',str(self.root/'skills')],capture_output=True)
         self.assertNotEqual(result.returncode,0)
+
+    def test_utf8_output_with_legacy_console(self):
+        env = dict(os.environ, PYTHONIOENCODING='ascii')
+        result = subprocess.run([sys.executable,str(ROOT/'scripts/install_skill.py'),'--dest',str(self.root/'skills')],capture_output=True,env=env)
+        self.assertEqual(result.returncode,0,result.stderr.decode('utf-8'))
+        self.assertIn('重新加载',result.stdout.decode('utf-8'))
+        m.write_json(self.root/'evidence.json',self.evidence)
+        result = subprocess.run([sys.executable,str(CLI),'validate',str(DEMO/'lesson-01.json'),'--evidence',str(self.root/'evidence.json')],capture_output=True,env=env)
+        self.assertEqual(result.returncode,0,result.stderr.decode('utf-8'))
+        self.assertIn('已核验',json.loads(result.stdout.decode('utf-8'))['note'])
 
 
 if __name__=='__main__': unittest.main()

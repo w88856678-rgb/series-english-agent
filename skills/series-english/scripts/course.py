@@ -226,6 +226,11 @@ class LocalHandler(SimpleHTTPRequestHandler):
 
 
 def main():
+    # Pipes on Windows may default to a legacy code page. JSON and Chinese
+    # diagnostics have the same UTF-8 contract as the files on every platform.
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
     p = sub.add_parser("init"); p.add_argument("--library", required=True); p.add_argument("--demo", action="store_true")
